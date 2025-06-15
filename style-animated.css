@@ -79,6 +79,7 @@ section img{
   display: block;
   width: 200px;
   margin: 0 auto 20px auto;
+  cursor: pointer;
 }
 
 /* TITRE */
