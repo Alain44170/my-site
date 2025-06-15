@@ -41,6 +41,7 @@ img {
   gap: 80px;
 }
 
+
 #menu li {
   display: flex;
   align-items: center;
@@ -55,6 +56,11 @@ section{
   margin: 20px;
   border: ridge 5px rgb(255, 102, 0);
 }
+section a{
+  color: rgb(16, 250, 55);
+  font-size: 17px;
+  font-weight: 800;
+}
 section p{
   background-color: rgba(0, 0, 0, 0.608);
   color: white;
@@ -68,6 +74,11 @@ section h2{
   text-align: center;
   border: none;
   border-radius: 7px;
+}
+section img{
+  display: block;
+  width: 200px;
+  margin: 0 auto 20px auto;
 }
 
 /* TITRE */
