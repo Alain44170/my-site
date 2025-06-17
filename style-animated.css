@@ -37,25 +37,29 @@ body {
   justify-content: center;
   margin: 40px 0;
 }
-#logo img{
+
+#logo img {
+  width: 230px;
+  height: auto;
   border-radius: 50%;
-  width: 180px;
+  display: block;
+
 }
 
 #menu ul {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 80px;
   list-style: none;
   padding: 0;
   margin: 30px 0 0;
- }
+}
 
 #menu li a {
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
 }
 
 section {
@@ -75,7 +79,7 @@ section p {
   color: white;
   font-size: 20px;
   padding: 15px;
-  width: 700px;
+  width: 90%;
   border-radius: 7px;
   margin: auto;
 }
@@ -87,11 +91,11 @@ section h2 {
   text-align: center;
   border-radius: 7px;
   padding: 10px;
-  width: 700px;
+  width: 90%;
 }
 
 #title1 {
-  width: 700px;
+  width: 90%;
   color: white;
   background-color: rgba(0, 0, 0, 0.724);
   text-align: center;
@@ -102,25 +106,28 @@ section h2 {
 }
 
 #textDeco {
-  width: 100px;
-  margin: 20px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
 }
 
 #textDeco h1 {
-  margin-left: -170px;
-  width: 700px;
-  font-size: 7em;
-  background: url(images/text.png);
-  background-size: cover;
-  background-position: top;
-  background-clip: text;
+ font-size: 5em;
+  background: url(images/text.png) center center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
+  margin: 0;
+
 }
-section .imgPreview{
+
+section .imgPreview {
   display: flex;
   width: 180px;
   border-radius: 50%;
-  margin:0 auto 20px;
+  margin: 0 auto 20px;
 }
 
 #formontact h1 {
@@ -187,6 +194,7 @@ button:hover {
   background-color: #00ffe1;
   color: rgb(14, 10, 10);
   box-shadow: 0 0 10px #00ffe1;
+  animation: pulse 1s infinite;
 }
 
 /* Animation pulse */
@@ -205,4 +213,51 @@ button:hover {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(0, 255, 225, 0.7);
   }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  #menu ul{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+  }
+
+  #logo{
+    margin: 20px 0;
+  }
+  #logo img{
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  section, p, section h2, #title1 {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-word;
+  }
+  section p {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+#textDeco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#textDeco h1 {
+  font-size: 4em;
+  width: auto;
+}
+
 }
