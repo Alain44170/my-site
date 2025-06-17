@@ -114,7 +114,7 @@ section h2 {
 }
 
 #textDeco h1 {
- font-size: 5em;
+  font-size: 5em;
   background: url(images/text.png) center center / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -149,7 +149,6 @@ form {
   font-size: 20px;
 }
 
-/* CHAMPS */
 input,
 textarea {
   width: 100%;
@@ -166,14 +165,14 @@ input {
   margin-top: 8px;
 }
 
-/* Effet brillant au focus */
+
 input:focus,
 textarea:focus {
   outline: none;
   box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
 }
 
-/* BOUTON */
+
 button {
   background-color: #ffffff;
   color: #1b0f0f;
@@ -189,7 +188,7 @@ button {
   animation: pulse 2s infinite;
 }
 
-/* Pulse au survol */
+
 button:hover {
   background-color: #00ffe1;
   color: rgb(14, 10, 10);
@@ -197,7 +196,7 @@ button:hover {
   animation: pulse 1s infinite;
 }
 
-/* Animation pulse */
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -219,45 +218,54 @@ button:hover {
   .container {
     padding: 20px;
   }
-  #menu ul{
+
+  #menu ul {
     flex-direction: column;
     gap: 20px;
     align-items: center;
 
   }
 
-  #logo{
+  #logo {
     margin: 20px 0;
   }
-  #logo img{
+
+  #logo img {
     width: 80%;
     max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  section, p, section h2, #title1 {
+
+  section,
+  p,
+  section h2,
+  #title1 {
     width: 90%;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     word-break: break-word;
   }
+
   section p {
     text-align: center;
     display: block;
     margin: 0 auto;
   }
-#textDeco {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-#textDeco h1 {
-  font-size: 4em;
-  width: auto;
-}
+
+  #textDeco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #textDeco h1 {
+    font-size: 4em;
+    width: auto;
+  }
 
 }
